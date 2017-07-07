@@ -8,9 +8,9 @@ Given task:
 
 I designed and implemented a rest API for a discography application via python microframework Flask in pycharam tool. And the developed application undergoes CRUD operations.
 
-* Flask is installed by using :
+* Flask installation:
 
-->For Windows use command  : from flask import Flask
+->For Windows use command: from flask import Flask
 
 ->For virtualenv use command:
   $ pip install Flask
