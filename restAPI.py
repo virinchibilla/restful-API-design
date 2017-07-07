@@ -3,7 +3,7 @@ from flask import jsonify
 from flask import request
 
 app = Flask(__name__)
-"This is the data base that i have created"
+
 musicDB=[
      {
          'id':'1',
@@ -91,7 +91,7 @@ musicDB=[
      },
 
  ]
-"This is for get request"
+
 @app.route('/music/musictrack',methods=['GET'])
 def getAllTracks():
     return jsonify({'music':musicDB})
@@ -100,7 +100,7 @@ def getAllTracks():
 def getTracksById(trackId):
     usr = [ music for music in musicDB if (music['id'] == trackId) ]
     return jsonify({'music':usr})
-"this is post request"
+
 @app.route('/music/musictrack',methods=['POST'])
 def createTracks():
     dat = {
@@ -113,7 +113,6 @@ def createTracks():
     musicDB.append(dat)
     return jsonify(dat)
 
-"This is for put request "
 
 @app.route('/music/musictrack/<trackId>',methods=['PUT'])
 def updateTracksById(trackId):
@@ -128,7 +127,6 @@ def updateTracksById(trackId):
         usr[0]['trackname'] = request.json['trackname']
     return jsonify({'emp':usr[0]})
 
-"This is for delete request"
 @app.route('/music/musictrack/<trackId>',methods=['DELETE'])
 def deleteTracksById(trackId):
     usr = [music for music in musicDB if (music['id'] == trackId) ]
