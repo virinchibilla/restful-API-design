@@ -4,18 +4,20 @@ Given task:
 2) Application handles artists,their albums and list of tracks in the album
 3) Application should allow CRUD operations via python( Flask or Django).
 
-Project that I have implemented:
+--> Project that I have implemented:
 
-I designed and implemented a rest API for a discography application via python microframework Flask. And the developed application undergoes CRUD operations.
+I designed and implemented a rest API for a discography application via python microframework Flask in pycharam tool. And the developed application undergoes CRUD operations.
 
-Flask is installed by using :
+* Flask is installed by using :
 
-For Windows use command  : from flask import Flask
+->For Windows use command  : from flask import Flask
 
-For virtualenv use command:
-$ pip install Flask
-$ FLASK_APP=hello.py flask run
-It will run on http://localhost:5000/
+->For virtualenv use command:
+  $ pip install Flask
+  $ FLASK_APP=hello.py flask run
+  It will run on http://localhost:5000/
+
+* PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains.
 
 >> Firstly, I created a database in jsonify format for each album with respect to artist given with unique id and also information about year and one of the trackname with respect to album. The data base is named as musicDB.
 
