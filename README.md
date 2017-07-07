@@ -1,4 +1,4 @@
-# restful-API-design
+# restful-API-design using Flask
 Given task:
 1) Design and implement a rest API for a discography application
 2) Application handles artists,their albums and list of tracks in the album
@@ -7,6 +7,15 @@ Given task:
 Project that I have implemented:
 
 I designed and implemented a rest API for a discography application via python microframework Flask. And the developed application undergoes CRUD operations.
+
+Flask is installed by using :
+
+For Windows use command  : from flask import Flask
+
+For virtualenv use command:
+$ pip install Flask
+$ FLASK_APP=hello.py flask run
+It will run on http://localhost:5000/
 
 >> Firstly, I created a database in jsonify format for each album with respect to artist given with unique id and also information about year and one of the trackname with respect to album. The data base is named as musicDB.
 
